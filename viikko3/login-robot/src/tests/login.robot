@@ -8,11 +8,11 @@ Login With Correct Credentials
     Output Should Contain  Logged in
 Login With Incorrect Password
     Input Credentials  kalle  kalleykskakskolme
-    Output Should Not Contain  Logged in
+    Output Should Contain  Invalid username or password
 
 Login With Nonexistent Username
     Input Credentials  calle  kalle123
-    Output Should Not Contain  Logged in
+    Output Should Contain  Invalid username or password
 
 *** Keywords ***
 Create User And Input Login Command
